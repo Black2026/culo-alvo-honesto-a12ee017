@@ -4,7 +4,7 @@ Seu talento merece ser encontrado.
 Aplicação web criada com Lovable para comparar currículos com descrições de vagas, estimar a compatibilidade com requisitos reconhecidos e gerar uma versão reorganizada, editável e exportável em PDF — sem inventar experiências ou competências.
 
 Aplicação: https://culo-alvo-honesto.lovable.app/
-Código-fonte: https://github.com/Black2026/culo-alvo-honesto-a12ee017
+Código-fonte: https://github.com/Black2026/curriculoalvo-ats-dio
 Projeto Lovable: https://lovable.dev/projects/44fb4460-d4c7-4567-8bea-23a9f986dee1
 Problema que resolve
 Mesmo candidatos qualificados podem apresentar currículos pouco alinhados à linguagem de uma vaga. O CurrículoAlvo ATS ajuda a identificar competências mencionadas na oportunidade e presentes no currículo, mostrar lacunas e reorganizar somente informações reais para facilitar a leitura.
