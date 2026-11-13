@@ -28,3 +28,11 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+
+- All résumé analysis and adaptation runs client-side in `src/lib/ats/` with deterministic rules; no backend, AI or external API — user data must never leave the browser.
+- The adapted-résumé generator may only reorder, reformat or re-label text already in the résumé; requirements missing from the résumé go to `suggestions`, never into the output text (covered by `src/lib/ats/ats.test.ts`).
+- Score = sum of found requirement weights ÷ sum of all active weights; return `null` (no percentage) when there are no active requirements.
+- PDF export uses jsPDF standard fonts (WinAnsi) via `src/lib/pdf.ts`, loaded with a dynamic import before the click so the download stays tied to the user gesture; sanitize text with `sanitizeForPdf`.
+- Never render user-provided text as HTML (no `dangerouslySetInnerHTML`) and never persist it (no localStorage, no logs).
