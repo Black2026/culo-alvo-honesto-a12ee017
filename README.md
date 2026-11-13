@@ -61,13 +61,13 @@ O processamento foi concebido para ocorrer no navegador, sem persistência de cu
 ## Evidências da aplicação
 
 ### 1. Entrada da vaga e do currículo
-![Entrada de dados](01-entrada-vaga-currículo.png)
+![Entrada de dados](01-entrada-vaga-curriculo.png)
 
 ### 2. Resultado da análise ATS
 ![Compatibilidade estimada de 59%](02-resultado-compatibilidade.png)
 
 ### 3. Currículo adaptado
-![Editor e exportação PDF](03-currículo-adaptado.png)
+![Editor e exportação PDF](03-curriculo-adaptado.png)
 
 # CurriculoAlvo ATS
 
