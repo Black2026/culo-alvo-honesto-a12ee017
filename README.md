@@ -58,6 +58,16 @@ Limitações conhecidas
 Privacidade
 O processamento foi concebido para ocorrer no navegador, sem persistência de currículos em banco de dados. Evite usar dados pessoais reais em capturas públicas, issues ou exemplos de documentação.
 
+## Evidências da aplicação
+
+### 1. Entrada da vaga e do currículo
+![Entrada de dados](01-entrada-vaga-currículo.png)
+
+### 2. Resultado da análise ATS
+![Compatibilidade estimada de 59%](02-resultado-compatibilidade.png)
+
+### 3. Currículo adaptado
+![Editor e exportação PDF](03-currículo-adaptado.png)
 
 # CurriculoAlvo ATS
 
