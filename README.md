@@ -1,3 +1,64 @@
+CurrículoAlvo ATS 🎯
+Seu talento merece ser encontrado.
+
+Aplicação web criada com Lovable para comparar currículos com descrições de vagas, estimar a compatibilidade com requisitos reconhecidos e gerar uma versão reorganizada, editável e exportável em PDF — sem inventar experiências ou competências.
+
+Aplicação: https://culo-alvo-honesto.lovable.app/
+Código-fonte: https://github.com/Black2026/culo-alvo-honesto-a12ee017
+Projeto Lovable: https://lovable.dev/projects/44fb4460-d4c7-4567-8bea-23a9f986dee1
+Problema que resolve
+Mesmo candidatos qualificados podem apresentar currículos pouco alinhados à linguagem de uma vaga. O CurrículoAlvo ATS ajuda a identificar competências mencionadas na oportunidade e presentes no currículo, mostrar lacunas e reorganizar somente informações reais para facilitar a leitura.
+Regra ética: a aplicação não adiciona automaticamente competências ausentes, resultados, cargos, empresas, datas, certificações ou formações não informados pelo candidato. O percentual de match é uma estimativa textual, não uma pontuação oficial de um ATS nem garantia de aprovação.
+
+Funcionalidades
+- Campos para colar a descrição da vaga e o currículo, com validações e contadores de caracteres.
+- Exemplo fictício para demonstração e opção de limpar dados com confirmação.
+- Indicador de compatibilidade estimada, com — quando não há requisitos reconhecidos.
+- Identificação de requisitos encontrados e ausentes, com trechos de evidência.
+- Pesos ajustáveis: essencial, importante, desejável ou ignorar.
+- Inclusão manual de requisitos não identificados automaticamente.
+- Geração determinística de currículo adaptado, reorganizando conteúdo existente sem inventar fatos.
+- Editor, cópia de texto, restauração de versões e download em PDF com texto selecionável.
+- Interface responsiva em português brasileiro.
+Fluxo de análise: da vaga ao PDF
+1. A pessoa cola a descrição da vaga e o texto do currículo.
+2. O sistema normaliza o texto e reconhece termos de um vocabulário local.
+3. Compara os requisitos reconhecidos com o currículo e apresenta evidências para cada resultado.
+4. Calcula o percentual estimado com base nos pesos, que podem ser revisados pelo usuário.
+5. Reorganiza as seções e prioriza informações relevantes já existentes no currículo.
+6. Exibe sugestões separadas quando faltam informações, sem inseri-las automaticamente.
+7. O usuário revisa e edita o currículo antes de copiar ou exportar o PDF.
+Exemplo demonstrativo
+No cenário fictício de Analista de Dados Júnior, o resultado relatado foi 59% de compatibilidade, com Excel e análise de dados encontrados. SQL, Power BI e Python foram identificados como ausentes e não foram incluídos no currículo adaptado. O percentual é específico do exemplo e dos pesos utilizados.
+Tecnologias
+O projeto exportado utiliza React, TypeScript, Vite, Tailwind CSS, componentes shadcn/ui/Radix, Lucide, TanStack Start/Router, jsPDF e Vitest. A análise do MVP foi concebida para funcionar localmente no navegador, sem login, banco de dados ou API paga de análise.
+Construção com Lovable e evolução do prompt
+1. Referência inicial: existia uma implementação independente em React, TypeScript e Vite, que serviu como referência de funcionalidades. Essa primeira versão não foi feita no Lovable.
+2. Mega prompt: foi elaborado um prompt único em Markdown com identidade visual, design system shadcn/ui, telas, fluxo ATS, privacidade, exportação PDF, critérios de teste e a regra de não inventar informações.
+3. Planejamento e geração: o documento foi anexado ao Lovable, que analisou a proposta, planejou a estrutura e gerou uma nova aplicação após autorização.
+4. Evolução funcional: a versão Lovable passou a oferecer evidências por requisito, ajuste de pesos, requisitos manuais, geração de currículo reorganizado, edição e PDF. A mudança essencial em relação à referência inicial foi ir além da simples normalização do texto e produzir uma versão reorganizada baseada em fatos existentes.
+5. Publicação e sincronização: a aplicação foi publicada no endereço acima e sincronizada com este repositório GitHub.
+Registro fiel dos refinamentos: não são atribuídos prompts adicionais ao Lovable sem evidência. Novos comandos de refinamento, se realizados, devem ser acrescentados aqui com sua justificativa.
+Testes e validação
+O relatório do Lovable informou 18 verificações automatizadas aprovadas, cobrindo cálculo de compatibilidade, ausência de porcentagem arbitrária e preservação de informações. O fluxo de exemplo, análise, pesos, geração, edição e exportação foi relatado como testado em computador e celular. O responsável confirmou também o funcionamento dos botões Copiar e Baixar PDF em navegador real.
+
+Para reproduzir os testes localmente, com Node.js e npm instalados:
+npm install
+npm run test
+npm run build
+npm run dev
+Evidências visuais recomendadas: incluir futuramente capturas reais da tela inicial, resultado de compatibilidade, currículo adaptado e PDF gerado em docs/evidencias/. Não referenciar imagens antes de adicioná-las ao repositório.
+Limitações conhecidas
+- Vocabulário automático limitado a aproximadamente 100 termos; outros podem ser adicionados manualmente.
+- A detecção de uma competência não verifica o nível de proficiência exigido.
+- Currículos são inseridos como texto; não há importação direta de PDF ou Word.
+- Títulos incomuns de seções podem impedir sua reorganização automática.
+- Os pesos inferidos pela estrutura da vaga precisam ser revisados.
+- A validação específica de download no Safari/iPhone após a publicação ainda não foi confirmada.
+Privacidade
+O processamento foi concebido para ocorrer no navegador, sem persistência de currículos em banco de dados. Evite usar dados pessoais reais em capturas públicas, issues ou exemplos de documentação.
+
+
 # CurriculoAlvo ATS
 
 # MEGA PROMPT — CURRÍCULOALVO ATS
